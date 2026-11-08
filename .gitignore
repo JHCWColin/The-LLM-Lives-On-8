@@ -1,0 +1,24 @@
+# 构建产物
+build/
+.gradle/
+*.apk
+*.aab
+
+# 预编译原生库（通过 build_native.sh 重新生成）
+*.so
+
+# 大模型文件（通过 download_model.sh 获取，或从 Release 下载 APK）
+*.gguf
+
+# 签名与本地配置（切勿提交）
+*.keystore
+*.jks
+local.properties
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+
+# 日志
+*.log

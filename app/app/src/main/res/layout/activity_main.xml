@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/status_loading"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:background="#EEEEEE" />
+
+    <ListView
+        android:id="@+id/chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:cacheColorHint="#FFFFFF"
+        android:scrollingCache="false"
+        android:animationCache="false"
+        android:overScrollMode="never" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#F2F2F2">
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/input_hint"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:inputType="text|textMultiLine|textCapSentences"
+            android:imeOptions="actionSend"
+            android:maxLines="3"
+            android:background="#FFFFFF"
+            android:padding="10dp"
+            android:enabled="false" />
+
+        <Button
+            android:id="@+id/send_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:background="@drawable/btn_normal"
+            android:enabled="false"
+            android:layout_marginLeft="6dp" />
+
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stop"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:background="@drawable/btn_stop"
+            android:enabled="false"
+            android:layout_marginLeft="6dp" />
+    </LinearLayout>
+</LinearLayout>
